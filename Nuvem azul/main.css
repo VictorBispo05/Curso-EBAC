@@ -1,0 +1,181 @@
+@font-face {
+    font-family: Gotham;
+    src: url(./fonts/Gotham-Bold.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gotham";
+}
+
+.dark {
+    color: white;
+    background-color: #00354D;
+}
+
+.welcome {
+    gap: 30px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    height: 520px;
+    width: 100%;
+    background: url(./images/Welcome_fundo.jpg) no-repeat;
+    background-size: cover;
+}
+
+header {
+    position: sticky top;
+    height: 75px;
+}
+
+.welcome__text {
+    width: 690px;
+}
+
+.welcome__text__title {
+    filter: drop-shadow(15px 5px 30px #00c3ff);
+    font-size: 6rem;
+    font-weight: bold;
+}
+
+.welcome__text__subtitle {
+    filter: drop-shadow(15px 5px 20px #00c3ff);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.slider {
+    width: 751px;
+    height: 380px;
+    border-radius: 18px;
+}
+
+.slider__slide__image {
+    border-radius: 1.6rem;
+    width: 751px;
+    height: 380px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.platform {
+    margin: 0px 90px;
+}
+
+.platform-subtitle {
+    text-align: start;
+    color: #adadad;
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.platform-title {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.tag {
+    position: absolute;
+    transform: translate(42px,22px);
+    z-index: 4;
+    background-color: #0072ff;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 5px;
+}
+
+.games__container {
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.card-station {
+    margin: 100px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+.games__container__card {
+    height: 600px;
+    width: 350px;
+    background-color: #2b2932;
+    align-items: center;
+    display: grid;
+    border-radius: 15px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.card--a {
+    height: 305px;
+    width: 305px;
+    margin: 20px 23px;
+}
+
+.games__container__card--image {
+    height: 305px;
+    border-radius: 13px;
+}
+/* Corrigir a sombra do hover */
+.games__container__card--image:hover {
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.games__container__card--title {
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 5px 25px;
+    text-decoration: none;
+}
+
+.games__container__card--description {
+    color: #8bacda;
+    margin: 15px 25px;
+    font-size: 15px;
+    line-height: 1.5;
+    display: block;
+}
+
+.games__container__card--time {
+    display: inline-block;
+    vertical-align: middle;
+    color: #8bacda;
+}
+
+.line {
+    border-bottom: 1px solid #8bacda41;
+    width: 300px;
+    margin: auto;
+}
+
+.games__container__card--button {
+    color: #fff;
+    display: inline-block;
+    width: 90%;
+    height: 2.6em;
+    line-height: 2.5em;
+    overflow: hidden;
+    margin: 20px;
+    font-size: 17px;
+    color: black;
+    border-radius: 6px;
+    border: 0px;
+    position: relative;
+    transition: 300ms;
+}
+
+.games__container__card--button:hover {
+    cursor: pointer;
+    background-color: #00ccff;
+}
